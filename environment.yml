@@ -10,13 +10,13 @@ dependencies:
 - flask-cors
 - flask-restx>=1.3.0 # Support for Flask >= 2.0
 - flask-socketio
-- geopandas # Due to python3.8 support
+- geopandas=0.13 # Due to python3.8 support
 - gevent # Required for flask-socketio, requires wheel building
 - gevent-websocket # Required for flask-socketio
 - libpysal
 - networkx=2.8
 - numba=0.57
-- numpy # Due to python3.8 support
+- numpy=1.24 # Due to python3.8 support
 - blas=*=openblas # Helps with performance for numpy and environment size
 - numpy-financial
 - osmnx=1.8
@@ -24,7 +24,7 @@ dependencies:
 - pillow # Make sure that Pillow is installed instead of PIL for staticmap
 - psutil
 - pvlib-python
-- python=3.9 # Held back by wntr version
+- python=3.8 # Held back by wntr version
 - pythonocc-core==7.7.0 # Avoid deprecation warnings
 - pytz # Not required from 3.9
 - pyyaml
@@ -44,5 +44,5 @@ dependencies:
 - yarn
 - pip:
   - staticmap
-  - wntr
+  - wntr==0.2.3
   - git+https://github.com/reyery/py4design.git@ignore-display # modified p4design to remove deprecated functions
